@@ -35,7 +35,6 @@ $(IOFILTER_OBJ): nvcomp_iofilter.cu nvcomp_iofilter.h
 
 install:
 	@install -v -d $(DESTDIR)/bin $(DESTDIR)/lib $(DESTDIR)/include
-	@install -v libudf_nvcomp_reader.so $(DESTDIR)/lib
 	@install -v *.h $(DESTDIR)/include
 	@if [ -e libnvcomp_iofilter.so ]; then \
 		install -v -d $(DESTDIR)/hdf5/lib/plugin; \
